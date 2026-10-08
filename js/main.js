@@ -57,29 +57,4 @@ document.addEventListener("DOMContentLoaded",()=>{
       list.appendChild(item);
    });
  }
-
- // Work in Progress Login Modal trigger
- const loginBtn = document.getElementById("login-btn");
- const wipModal = document.getElementById("wip-modal");
- const wipClose = document.getElementById("wip-modal-close");
- const wipOk = document.getElementById("wip-modal-ok");
-
- if (loginBtn && wipModal) {
-   loginBtn.addEventListener("click", (e) => {
-     e.preventDefault();
-     wipModal.style.display = "grid";
-   });
- }
-
- const closeModal = () => {
-   if (wipModal) wipModal.style.display = "none";
- };
-
- if (wipClose) wipClose.addEventListener("click", closeModal);
- if (wipOk) wipOk.addEventListener("click", closeModal);
- if (wipModal) {
-   wipModal.addEventListener("click", (e) => {
-     if (e.target === wipModal) closeModal();
-   });
- }
 });
