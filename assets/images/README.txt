@@ -1,0 +1,1 @@
+Images are currently loaded from Unsplash URLs in the HTML. Replace these with downloaded/local assets if required for the final assignment.

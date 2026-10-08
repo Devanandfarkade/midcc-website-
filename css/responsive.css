@@ -1,0 +1,94 @@
+@media (max-width: 1000px) {
+  .container { width: min(100% - 32px, 760px); }
+  .nav { display: none; position: absolute; top: 66px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; padding: 12px 24px; box-shadow: 0 15px 30px rgba(23, 36, 59, 0.12); }
+  .nav.open { display: flex; }
+  .nav a { height: 48px; }
+  .menu-toggle { display: block; }
+  .hero { padding-top: 45px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .plot-card { justify-self: start; width: 100%; max-width: 580px; }
+  .mnc-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .feature-grid, .developments-grid, .future-grid { grid-template-columns: 1fr 1fr; }
+  .map-shell { grid-template-columns: 1fr; }
+  .map-panel { height: 430px; }
+  .company-map { height: 500px; }
+  .infra-layout { grid-template-columns: 1fr; gap: 45px; }
+  .logistics-card { min-height: 500px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .brand { font-size: 20px; }
+  .ticker { height: 38px; font-size: 11px; }
+  .hero { min-height: auto; }
+  .hero h1 { font-size: clamp(2.6rem, 9vw, 4rem); }
+  .hero p { font-size: 16px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .btn, .plot-btn { width: 100%; justify-content: center; }
+  .plot-card { padding: 25px 18px; border-width: 5px; }
+  .plot-card h3 { font-size: 24px; }
+  .stats-card { grid-template-columns: repeat(2, minmax(0, 1fr)); min-height: 180px; margin-top: -15px; }
+  .stats-card > div { border-bottom: 1px solid #edf0f4; }
+  .stats-card strong { font-size: 25px; }
+  .section { padding: 70px 0; }
+  .center-heading { margin-bottom: 35px; }
+  .center-heading h2 { font-size: 34px; }
+  .mnc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .mnc-card { height: 135px; }
+  .feature-grid, .developments-grid, .future-grid { grid-template-columns: 1fr; }
+  .company-map { height: 390px; }
+  .map-panel { height: 430px; }
+  .infra-copy h2 { font-size: 43px; }
+  .compliance-flex { display: block; }
+  .compliance-flex .btn { margin-top: 20px; }
+  .section-heading { display: block; }
+  .section-heading > p { margin-top: 16px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .container { width: calc(100% - 22px); }
+  .site-header { height: 60px; }
+  .brand { gap: 8px; font-size: 1.6rem; }
+  .brand-mark { width: 32px; height: 32px; font-size: 1.7rem; }
+  .menu-toggle { font-size: 24px; }
+  .ticker { height: 32px; font-size: 9px; letter-spacing: 0.02em; }
+  .hero { padding-top: 28px; }
+  .hero-inner { gap: 24px; min-height: auto; }
+  .location-pill { font-size: 11px; padding: 7px 10px; }
+  .hero-copy h1 { line-height: 0.95; letter-spacing: -0.06em; }
+  .hero-copy p { line-height: 1.55; }
+  .plot-card { padding: 20px 15px; }
+  .plot-card h3 { font-size: 22px; }
+  .plot-card p { font-size: 14px; }
+  .plot-btn, .btn { padding: 15px 18px; }
+  .stats-card { grid-template-columns: 1fr 1fr; }
+  .stats-card > div { padding: 18px 12px; }
+  .stats-card strong { font-size: 22px; }
+  .stats-card span { font-size: 13px; }
+  .section { padding: 60px 0; }
+  .center-heading h2 { font-size: 28px; }
+  .mnc-grid { grid-template-columns: 1fr 1fr; }
+  .mnc-card { padding: 18px 12px; }
+  .feature-card, .timeline-row, .timeline-image, .map-panel, .logistics-card { border-radius: 18px; }
+  .timeline:before { left: 10px; }
+  .timeline-row, .timeline-row.reverse { display: grid; grid-template-columns: 30px 1fr; grid-template-areas: "dot copy" "dot image"; align-items: start; min-height: 0; margin-bottom: 38px; }
+  .timeline-dot { grid-area: dot; margin-top: 7px; }
+  .timeline-copy { grid-area: copy; text-align: left; padding: 0 0 20px 12px; }
+  .timeline-image { grid-area: image; height: 205px; border-radius: 18px; }
+  .timeline-row.reverse .timeline-copy { grid-area: copy; }
+  .timeline-row.reverse .timeline-image { grid-area: image; }
+  .map-open { position: static; display: inline-flex; margin: 12px; }
+  .company-item { padding: 12px 10px; }
+  .company-item b { font-size: 14px; }
+  .company-item small { font-size: 11px; }
+  .infra-item { gap: 12px; }
+  .infra-item span { width: 36px; height: 36px; min-width: 36px; }
+  .compliance-card { padding: 22px 18px; }
+  .compliance-card-title h3 { font-size: 21px; }
+  .compliance-description { font-size: 15px; }
+  .compliance-bottom { display: block; }
+  .compliance-bottom a { display: block; margin-top: 12px; }
+  .footer { padding-top: 28px; }
+  .footer-grid { gap: 18px; }
+}
